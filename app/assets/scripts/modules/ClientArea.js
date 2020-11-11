@@ -17,7 +17,7 @@ class ClientArea {
   }
 
   sendRequest() {
-    Axios.post('https://pensive-rosalind-383c21.netlify.com/.netlify/functions/secret-area', {password: this.field.value}).then(response => {
+    Axios.post('https://focused-leavitt-0c5a58.netlify.app/.netlify/functions/secret-area', {password: this.field.value}).then(response => {
       this.form.remove()
       this.contentArea.innerHTML = response.data
     }).catch(() => {
